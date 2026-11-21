@@ -1,0 +1,22 @@
+# Local test only: same images and variables as the Railway template.
+services:
+  backend:
+    build: ./backend
+    environment:
+      SECRET_KEY: local-test-secret-key-0123456789abcdef0123456789
+      ADMIN_PASSWORD: local-test-password
+      AUTH_USERNAME: admin
+      PORT: "8000"
+    volumes:
+      - backend_data:/app/data
+  frontend:
+    build: ./frontend
+    environment:
+      PORT: "8080"
+      BACKEND_UPSTREAM: backend:8000
+    ports:
+      - "8080:8080"
+    depends_on:
+      - backend
+volumes:
+  backend_data:

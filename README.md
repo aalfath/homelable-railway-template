@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/homelable?utm_medium=integration&utm_source=button&utm_campaign=homelable)
+
 # Homelable on Railway
 
 A Railway template for [Homelable](https://github.com/Pouzor/homelable), the self-hosted homelab infrastructure visualizer: an interactive network diagram with inventory, documentation and live status checks.

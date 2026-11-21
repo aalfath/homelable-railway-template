@@ -3,6 +3,10 @@
 Changes to this Railway template. Breaking changes are listed first in each entry.
 Upstream app changes: https://github.com/Pouzor/homelable/blob/main/CHANGELOG.md
 
+## 3.7.1-1 (2026-11-21)
+
+- README: Deploy on Railway button for the published template (`homelable`). No change to the services.
+
 ## 3.7.1 (2026-11-21)
 
 - First release: Homelable 3.7.1 (`ghcr.io/pouzor/homelable-backend` and `ghcr.io/pouzor/homelable-frontend`, pinned by digest).

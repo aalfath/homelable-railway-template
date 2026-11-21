@@ -8,7 +8,7 @@ RUN chmod 0755 /usr/local/bin/homelable-start
 ENV PORT=8000 \
     SQLITE_PATH=/app/data/homelab.db
 
-VOLUME ["/app/data"]
+# Data (SQLite DB, uploads, scan settings) lives in /app/data: mount a volume there.
 EXPOSE 8000
 
 CMD ["/usr/local/bin/homelable-start"]

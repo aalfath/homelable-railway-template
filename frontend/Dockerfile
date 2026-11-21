@@ -12,4 +12,7 @@ ENV PORT=8080 \
     NGINX_ENTRYPOINT_LOCAL_RESOLVERS=1 \
     NGINX_ENVSUBST_FILTER=^(BACKEND_UPSTREAM|PORT|NGINX_LOCAL_RESOLVERS)\$
 
+# nginx "worker_processes auto" starts one worker per host CPU; Railway hosts have many.
+RUN sed -i "s/^worker_processes.*/worker_processes 2;/" /etc/nginx/nginx.conf
+
 EXPOSE 8080

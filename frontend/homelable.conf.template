@@ -1,5 +1,5 @@
 # Rendered by the nginx entrypoint (envsubst) at container start.
-# Only ${PORT}, ${BACKEND_UPSTREAM} and ${NGINX_LOCAL_RESOLVERS} are substituted.
+# Only PORT, BACKEND_UPSTREAM and NGINX_LOCAL_RESOLVERS are substituted (NGINX_ENVSUBST_FILTER).
 server {
     listen ${PORT};
     listen [::]:${PORT};
